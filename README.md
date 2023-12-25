@@ -1,38 +1,35 @@
-# create-svelte
+# Svelte-Project
+Projeto de Svelte - RIA, 2023.2
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Como iniciar um projeto Svelte?
 
-## Creating a project
+1. Na pasta/repositório desejado:
 
-If you're seeing this, you've probably already done this step. Congrats!
+        npm create svelte@latest nome-do-aplicativo
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+    * Caso na criação do projeto seja necessário a instalação de outras dependências, instale o que for pedido.  
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+    * No template, para a prática, selecione 'SvelteKit demo app'
 
-## Developing
+2. Navegue até a pasta do aplicativo 
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+        cd nome-do-aplicativo
 
-```bash
-npm run dev
+3. Instale as dependências 
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+        npm install
 
-## Building
+    * Caso o projeto esteja em um repositório Git, o próximo passo é opcional mas recomendado:
 
-To create a production version of your app:
+            git init 
+            git add -A
+            git commit -m "Texto do Commit"
 
-```bash
-npm run build
-```
+4. Para rodar o projeto recem criado:
 
-You can preview the production build with `npm run preview`.
+        npm run dev -- --open
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+5. Instale a extensão caso esteja rodando no Visual Studio Code
+
+        "Svelte for VS Code"
+
